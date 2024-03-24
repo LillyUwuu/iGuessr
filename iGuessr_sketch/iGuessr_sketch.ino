@@ -115,6 +115,9 @@ void sendKeyPress(uint8_t key) {
     tft.println("If the code didn't work try going down a few digits.");
     tft.println();
     tft.println("Good luck!");
+    buf[0] = 0;
+    buf[2] = 0;
+    Serial.write(buf, 8);
     while(1); // Infinite loop to halt execution
   }
 
