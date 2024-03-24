@@ -14,7 +14,12 @@ Let's build shall we?
 
 1. First you need to have the Arduino IDE downloaded. [Link to the Arduino site](https://www.arduino.cc/en/software)
 2. In this github you will find a file named iGuessr_sketch.ino, upload this sketch to the ardunio (If you get any errors
-it likely means you're missing a few library's like Adafruit_GFX or Adafruit_TFTLCD, just download and retry)
+it likely means you're missing a few library's like Adafruit_GFX or Adafruit_TFTLCD, just download them and retry)
 3. Once the sketch is uploaded you need to download Atmel Flip [Link to Atmel Flip page](https://www.microchip.com/en-us/development-tool/flip),
 This tool will turn the Arduino into a keyboard and back to stock if you want to reuse it later.
-4.
+(Also very important, when downloading Flip you need to download the one with the Java Runtime Environment included to avoid issues)
+4. You will need to short 2 specific pins as shown in the picture to put the Atmega16u2 chip into a dfu like state
+![Dfu mode](images/dfu.jpg)
+5. Now that you're Arduino is in dfu we need to upload the iGuessr-Mode.hex file, Once Atmel Flip is downloaded you will need to specify your chip in the software
+then you connect to the Arduino, select the correct hex file and upload, Bellow should be a gif better showing how its done. 
+![How to use flip](images/Flip.gif)
