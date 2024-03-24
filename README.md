@@ -5,7 +5,7 @@ Well its simple, we turn your Arduino into a virtual keyboard that will automati
 ## Prerequisites
 - Exploited iDevice
 - Arduino UNO
-- 2.4″ LCD Shield (Support for 16x2 lcd is comming soon)
+- 2.4″ LCD Shield (Support for 16x2 lcd is coming soon)
 - Photoresistor
 - Usb A to B data cable
 - Apple lightning to usb camera adapter or the 30pin version
@@ -13,5 +13,8 @@ Well its simple, we turn your Arduino into a virtual keyboard that will automati
 Let's build shall we?
 
 1. First you need to have the Arduino IDE downloaded. [Link to the Arduino site](https://www.arduino.cc/en/software)
-2. In this github you will find a file named iGuessr_sketch.ino, upload this sketch to the ardunio
-3. 
+2. In this github you will find a file named iGuessr_sketch.ino, upload this sketch to the ardunio (If you get any errors
+it likely means you're missing a few library's like Adafruit_GFX or Adafruit_TFTLCD, just download and retry)
+3. Once the sketch is uploaded you need to download Atmel Flip [Link to Atmel Flip page](https://www.microchip.com/en-us/development-tool/flip),
+This tool will turn the Arduino into a keyboard and back to stock if you want to reuse it later.
+4.
