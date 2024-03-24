@@ -23,7 +23,7 @@
 #define KEY_9 0x26  //Number: 9
 #define KEY_0 0x27  //Number: 0
 
-// Turning funky hex into a readable word
+// Turning funky hex into a readable words
 #define BLACK   0x0000 
 #define WHITE   0xFFFF
 
@@ -102,10 +102,19 @@ void sendKeyPress(uint8_t key) {
     tft.setCursor(0, 0);
     tft.setTextColor(WHITE);
     tft.setTextSize(1);
-    tft.println("YOOO Light change detected!!!"); 
-    tft.println("Seems like the phone unlocked");
-    tft.print("Last entered code: ");
+    tft.setTextSize(2);
+    tft.println("     iGuessr v1");
+    tft.setTextSize(1);
+    tft.println();
+    tft.println("YO! The light sensor detected something!"); 
+    tft.println("Seems like the phone unlocked!");
+    tft.println();
+    tft.print("Last entered code was: ");
     tft.println(Lcode);
+    tft.println();
+    tft.println("If the code didn't work try going down a few digits.");
+    tft.println();
+    tft.println("Good luck!");
     while(1); // Infinite loop to halt execution
   }
 
