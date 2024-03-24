@@ -5,10 +5,13 @@ Well its simple, we turn your Arduino into a virtual keyboard that will automati
 ## Prerequisites
 - Exploited iDevice
 - Arduino UNO
-- 2.4″ LCD Shield (Support for 16x2 lcd is coming soon)
-- Photoresistor
-- Usb A to B data cable
+- 2.4″ LCD Shield (Optional) (Support for 16x2 lcd is coming soon)
 - Apple lightning to usb camera adapter or the 30pin version
+- Photoresistor
+- Normal 10k resistor
+- Small wires
+- Breadboard (optional)
+- Usb A to B data cable
 ## Build Guide
 Let's build shall we?
 
@@ -18,8 +21,14 @@ it likely means you're missing a few library's like Adafruit_GFX or Adafruit_TFT
 3. Once the sketch is uploaded you need to download Atmel Flip [Link to Atmel Flip page](https://www.microchip.com/en-us/development-tool/flip),
 This tool will turn the Arduino into a keyboard and back to stock if you want to reuse it later.
 (Also very important, when downloading Flip you need to download the one with the Java Runtime Environment included to avoid issues)
-4. You will need to short 2 specific pins as shown in the picture to put the Atmega16u2 chip into a dfu like state
+4. You will need to short 2 specific pins as shown in the picture to put the Atmega16u2 chip into a dfu like state <br>
 ![Dfu mode](images/dfu.jpg)
 5. Once you're Arduino is in dfu mode, you will need to upload the iGuessr-Mode.hex file, in Atmel Flip you will need to specify your chip (Atmega 16u2) 
 then you connect to the Arduino, select the correct hex file and upload. <br>
-![How to use flip](images/Flip.gif)
+![How to use flip](images/Flip.gif) <br>
+We are almost finished
+6. All you need to do now is slap on that 2.4″ LCD Shield and connect that light sensor, schematic below
+![How to connect](images/lightsensor.png) <br>
+7. Tada, if you did everything correctly you should now have a brand new and hopefully working iGuessr in your hands
+![Done](images/Done.jpg)
+## FAQ
