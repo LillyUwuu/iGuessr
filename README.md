@@ -20,6 +20,6 @@ This tool will turn the Arduino into a keyboard and back to stock if you want to
 (Also very important, when downloading Flip you need to download the one with the Java Runtime Environment included to avoid issues)
 4. You will need to short 2 specific pins as shown in the picture to put the Atmega16u2 chip into a dfu like state
 ![Dfu mode](images/dfu.jpg)
-5. Now that you're Arduino is in dfu we need to upload the iGuessr-Mode.hex file, Once Atmel Flip is downloaded you will need to specify your chip in the software
-then you connect to the Arduino, select the correct hex file and upload. 
+5. Once you're Arduino is in dfu mode, you will need to upload the iGuessr-Mode.hex file, in Atmel Flip you will need to specify your chip (Atmega 16u2) 
+then you connect to the Arduino, select the correct hex file and upload. <br>
 ![How to use flip](images/Flip.gif)
