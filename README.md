@@ -27,8 +27,8 @@ This tool will turn the Arduino into a keyboard and back to stock if you want to
 then you connect to the Arduino, select the correct hex file and upload. <br>
 ![How to use flip](images/Flip.gif) <br>
 We are almost finished
-6. All you need to do now is slap on that 2.4″ LCD Shield and connect that light sensor, schematic below
+6. All you need to do now is slap on that 2.4″ LCD Shield and connect that light sensor, schematic below <br>
 ![How to connect](images/lightsensor.png) <br>
-7. Tada, if you did everything correctly you should now have a brand new and hopefully working iGuessr in your hands
-![Done](images/Done.jpg)
+7. Tada, if you did everything correctly you should now have a brand new and hopefully working iGuessr in your hands <br>
+![Done](images/Done.jpg) <br>
 ## FAQ
