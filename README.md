@@ -32,3 +32,4 @@ We are almost finished
 7. Tada, if you did everything correctly you should now have a brand new and hopefully working iGuessr in your hands <br>
 ![Done](images/Done.jpg) <br>
 ## FAQ
+Coming soon, or maybe never who knows
